@@ -1,9 +1,1920 @@
-[gd_scene load_steps=3 format=3 uid="uid://dlmlax26j525d"]
+[gd_scene load_steps=141 format=3 uid="uid://dlmlax26j525d"]
 
 [ext_resource type="Script" path="res://addons/plantdesigner/plant_3d.gd" id="1_0oupq"]
 [ext_resource type="Material" uid="uid://4ut6oq2l4kd2" path="res://addons/plantdesigner/materials/bark.tres" id="2_dkr66"]
+[ext_resource type="Script" path="res://addons/line_3d/line_3d.gd" id="3_b7p6w"]
+
+[sub_resource type="Curve3D" id="Curve3D_55dat"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_0bt6u"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_16bja"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_kt0lg"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.213803, 0.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_2e6ny"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.213803, 0.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 0.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_jbb1k"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 0.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 0.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_kral7"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 0.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.855211, 0.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_u0stv"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.855211, 0.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.28282, 1.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_t16je"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.28282, 1.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.28282, 1.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_soba4"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.28282, 1.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.92423, 1.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_upqho"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_a6vh6"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_76eht"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.213803, 0.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_gj46d"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.213803, 0.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 0.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_84xrs"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 0.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.855211, 1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_syiwr"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.855211, 1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.28282, 1.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_nm10u"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.28282, 1.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.92423, 1.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ilek7"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_bfgys"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_wari4"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_0ijb4"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.213803, 0.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_edrfp"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.213803, 0.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 0.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_q03bq"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 0.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 0.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_h8i2d"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 0.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.855211, 1.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ki8u6"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.855211, 1.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.28282, 1.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_xa641"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.28282, 1.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.28282, 1.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_h00v7"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.28282, 1.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.92423, 1.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_hgk8p"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.92423, 1.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 2.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_1yqpp"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 2.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 2.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_skjfn"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 2.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 3.42085, 2.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_fysqk"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.213803, 0.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 0.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_y0abo"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 0.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.641409, 1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_4rig8"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.641409, 1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.641409, 1.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_q1tlr"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.641409, 1.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.641409, 1.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_d666o"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.641409, 1.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_tk3vk"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.213803, 2.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_f3yu5"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.213803, 2.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.213803, 2.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_7xf85"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.427606, 0.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.641409, 1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_xjvsu"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.641409, 1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.855211, 1.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_mqwqb"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.855211, 1.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.855211, 1.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_vvkdj"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0.855211, 1.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.28282, 1.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_7vtjm"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.28282, 1.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.71042, 1.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_4ypho"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.71042, 1.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.71042, 1.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_yws20"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.71042, 1.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.35183, 2.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_6hxj1"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.35183, 2.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.99324, 2.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_odxi5"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.99324, 2.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.99324, 2.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_qijqo"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.99324, 2.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 3.84845, 3.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_38ewc"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.84845, 3.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 4.70366, 3.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_s2lnv"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 4.70366, 3.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 4.70366, 3.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_7l6dg"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 4.70366, 3.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.77268, 4.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_0cr5b"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.28282, 1.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 1.71042, 1.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_3ily6"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.71042, 1.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.13803, 2.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_x8kmb"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.13803, 2.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.35183, 2.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_are5r"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.35183, 2.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 2.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_yms1d"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 2.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 3.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_t2lqx"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 3.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 3.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_omuko"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 3.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.35183, 4.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_mga44"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 1.71042, 1.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.13803, 2.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_161vl"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.13803, 2.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 2.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_pbgah"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 2.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 2.56563, 2.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_x2ymj"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 2.56563, 2.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 3.20704, 2.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_otp8y"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.20704, 2.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 3.84845, 3.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_puyns"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.84845, 3.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 3.84845, 3.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_hjc4p"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.84845, 3.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 4.70366, 3.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_q5ow4"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 4.70366, 3.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.55887, 4.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_4fexv"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 5.55887, 4.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.55887, 4.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_pds6q"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 5.55887, 4.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 6.62789, 4.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_36f1g"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 6.62789, 4.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 7.6969, 5.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_4aglc"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 7.6969, 5.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 7.6969, 5.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_66lon"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 7.6969, 5.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 8.97972, 6.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_iepxe"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.20704, 2.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 3.84845, 3.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_l12u6"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.84845, 3.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 4.48986, 3.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_fbjxn"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 4.48986, 3.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 4.91747, 4.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_rh2ed"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 4.91747, 4.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.34507, 4.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_usbv3"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 5.34507, 4.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.55887, 5.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_mr45w"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 5.55887, 5.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.77268, 5.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_8epb7"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 5.77268, 5.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 5.77268, 6.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_d0txh"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 3.84845, 3.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 4.48986, 3.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_7ieqv"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_lwhgu"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ktnml"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.213803, 0.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_wn65t"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.213803, 0.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 0.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_prck2"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 0.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 0.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_mgtxc"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 0.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 1.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_55dn0"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 1.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 1.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_gmhfl"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 1.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 1.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_q1m6k"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 1.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.213803, 1.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_vfhrl"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.213803, 1.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 2.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_e237r"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 2.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 2.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_7l311"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 2.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0.427606, 2.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_e6got"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.213803, 0.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.427606, 0.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_xsbqp"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 0.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.641409, 1.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_burqm"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.641409, 1.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.06901, 1.4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_x38qt"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.06901, 1.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.49662, 1.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_laaa2"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.49662, 1.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 2.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_gmiln"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 2.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.77944, 2.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_rfraf"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.77944, 2.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -3.63465, 3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_5mblc"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.427606, 0.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.641409, 1.1, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_nu2rt"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.641409, 1.1, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -0.855211, 1.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_tppqw"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -0.855211, 1.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.28282, 1.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_44fwf"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.28282, 1.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.71042, 1.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_i5emw"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.71042, 1.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.71042, 1.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ws27x"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.71042, 1.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.92423, 2.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_2d7dd"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.92423, 2.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 2.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ymuy6"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 2.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 2.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_okaoj"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 2.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 3.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_6n75n"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 3.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 3.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_adtft"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 3.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 3.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_lw08y"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 3.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.92423, 4.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_koe3s"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.28282, 1.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -1.71042, 1.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_aa301"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.71042, 1.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 2.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_pkwt5"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 2.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.77944, 2.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_prrp4"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.77944, 2.6, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -3.42085, 3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_3ri8g"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.42085, 3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.27606, 3.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_rx166"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -4.27606, 3.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -5.13127, 4, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_lxf85"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -5.13127, 4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -6.20028, 4.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_q7xyh"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -1.71042, 1.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.13803, 2.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_85sfl"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.13803, 2.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -2.56563, 2.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_tncqj"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -2.56563, 2.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -3.20704, 2.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_y51dq"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.20704, 2.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -3.84845, 3.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_d2l8e"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.84845, 3.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -3.84845, 3.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_bsmhx"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.84845, 3.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.27606, 3.8, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_awjno"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -4.27606, 3.8, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.70366, 4.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_5gfy0"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -4.70366, 4.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.70366, 4.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_gvll8"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -4.70366, 4.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.91747, 4.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_t0apd"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -4.91747, 4.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -5.13127, 5.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_xp7ct"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -5.13127, 5.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -5.13127, 5.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ifen6"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -5.13127, 5.5, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -5.13127, 6.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_34sd3"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.20704, 2.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -3.84845, 3.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_it7qh"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.84845, 3.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.48986, 3.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_a0ytl"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -4.48986, 3.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -5.34507, 4.2, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_t1tpn"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -5.34507, 4.2, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -6.20028, 4.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_51ru8"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -6.20028, 4.7, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -7.2693, 5.3, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_fr4ab"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -7.2693, 5.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -8.33831, 5.9, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_sjrav"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -8.33831, 5.9, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -9.62113, 6.6, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_n1x8g"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, -3.84845, 3.3, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, -4.48986, 3.7, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_pn2gj"]
+_data = {
+"points": PackedVector3Array(-3.86686, -8.4823, 4.01408, 0, 0, 0, 0, 0.4, 0, 0, 0, 0, -11.6262, 0.472446, -12.5507, 0, 0.5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
 
 [node name="Plant3D" type="Node3D"]
 script = ExtResource("1_0oupq")
-output_string = "F[+F+F+F]F[-F-F-F][+F[+F+F+F]F[-F-F-F]+F[+F+F+F]F[-F-F-F]+F[+F+F+F]F[-F-F-F]]F[+F+F+F]F[-F-F-F][-F[+F+F+F]F[-F-F-F]-F[+F+F+F]F[-F-F-F]-F[+F+F+F]F[-F-F-F]]//"
+line_width = 0.170292
+angle = 12.25
+output_string = "F[+F+F+F][-F-F-F][+F[+F+F+F][-F-F-F]+F[+F+F+F][-F-F-F]+F[+F+F+F][-F-F-F]][-F[+F+F+F][-F-F-F]-F[+F+F+F][-F-F-F]-F[+F+F+F][-F-F-F]]"
+material = ExtResource("2_dkr66")
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_55dat")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D2" type="Path3D" parent="."]
+curve = SubResource("Curve3D_0bt6u")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D3" type="Path3D" parent="."]
+curve = SubResource("Curve3D_16bja")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D4" type="Path3D" parent="."]
+curve = SubResource("Curve3D_kt0lg")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D5" type="Path3D" parent="."]
+curve = SubResource("Curve3D_2e6ny")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D6" type="Path3D" parent="."]
+curve = SubResource("Curve3D_jbb1k")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D7" type="Path3D" parent="."]
+curve = SubResource("Curve3D_kral7")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D8" type="Path3D" parent="."]
+curve = SubResource("Curve3D_u0stv")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D9" type="Path3D" parent="."]
+curve = SubResource("Curve3D_t16je")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D10" type="Path3D" parent="."]
+curve = SubResource("Curve3D_soba4")
+script = ExtResource("3_b7p6w")
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D11" type="Path3D" parent="."]
+curve = SubResource("Curve3D_upqho")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D12" type="Path3D" parent="."]
+curve = SubResource("Curve3D_a6vh6")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D13" type="Path3D" parent="."]
+curve = SubResource("Curve3D_76eht")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D14" type="Path3D" parent="."]
+curve = SubResource("Curve3D_gj46d")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D15" type="Path3D" parent="."]
+curve = SubResource("Curve3D_84xrs")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D16" type="Path3D" parent="."]
+curve = SubResource("Curve3D_syiwr")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D17" type="Path3D" parent="."]
+curve = SubResource("Curve3D_nm10u")
+script = ExtResource("3_b7p6w")
+width = 0.198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D18" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ilek7")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D19" type="Path3D" parent="."]
+curve = SubResource("Curve3D_bfgys")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D20" type="Path3D" parent="."]
+curve = SubResource("Curve3D_wari4")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D21" type="Path3D" parent="."]
+curve = SubResource("Curve3D_0ijb4")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D22" type="Path3D" parent="."]
+curve = SubResource("Curve3D_edrfp")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D23" type="Path3D" parent="."]
+curve = SubResource("Curve3D_q03bq")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D24" type="Path3D" parent="."]
+curve = SubResource("Curve3D_h8i2d")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D25" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ki8u6")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D26" type="Path3D" parent="."]
+curve = SubResource("Curve3D_xa641")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D27" type="Path3D" parent="."]
+curve = SubResource("Curve3D_h00v7")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D28" type="Path3D" parent="."]
+curve = SubResource("Curve3D_hgk8p")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D29" type="Path3D" parent="."]
+curve = SubResource("Curve3D_1yqpp")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D30" type="Path3D" parent="."]
+curve = SubResource("Curve3D_skjfn")
+script = ExtResource("3_b7p6w")
+width = 0.19602
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D31" type="Path3D" parent="."]
+curve = SubResource("Curve3D_fysqk")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D32" type="Path3D" parent="."]
+curve = SubResource("Curve3D_y0abo")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D33" type="Path3D" parent="."]
+curve = SubResource("Curve3D_4rig8")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D34" type="Path3D" parent="."]
+curve = SubResource("Curve3D_q1tlr")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D35" type="Path3D" parent="."]
+curve = SubResource("Curve3D_d666o")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D36" type="Path3D" parent="."]
+curve = SubResource("Curve3D_tk3vk")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D37" type="Path3D" parent="."]
+curve = SubResource("Curve3D_f3yu5")
+script = ExtResource("3_b7p6w")
+width = 0.19406
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D38" type="Path3D" parent="."]
+curve = SubResource("Curve3D_7xf85")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D39" type="Path3D" parent="."]
+curve = SubResource("Curve3D_xjvsu")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D40" type="Path3D" parent="."]
+curve = SubResource("Curve3D_mqwqb")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D41" type="Path3D" parent="."]
+curve = SubResource("Curve3D_vvkdj")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D42" type="Path3D" parent="."]
+curve = SubResource("Curve3D_7vtjm")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D43" type="Path3D" parent="."]
+curve = SubResource("Curve3D_4ypho")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D44" type="Path3D" parent="."]
+curve = SubResource("Curve3D_yws20")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D45" type="Path3D" parent="."]
+curve = SubResource("Curve3D_6hxj1")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D46" type="Path3D" parent="."]
+curve = SubResource("Curve3D_odxi5")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D47" type="Path3D" parent="."]
+curve = SubResource("Curve3D_qijqo")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D48" type="Path3D" parent="."]
+curve = SubResource("Curve3D_38ewc")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D49" type="Path3D" parent="."]
+curve = SubResource("Curve3D_s2lnv")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D50" type="Path3D" parent="."]
+curve = SubResource("Curve3D_7l6dg")
+script = ExtResource("3_b7p6w")
+width = 0.192119
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D51" type="Path3D" parent="."]
+curve = SubResource("Curve3D_0cr5b")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D52" type="Path3D" parent="."]
+curve = SubResource("Curve3D_3ily6")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D53" type="Path3D" parent="."]
+curve = SubResource("Curve3D_x8kmb")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D54" type="Path3D" parent="."]
+curve = SubResource("Curve3D_are5r")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D55" type="Path3D" parent="."]
+curve = SubResource("Curve3D_yms1d")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D56" type="Path3D" parent="."]
+curve = SubResource("Curve3D_t2lqx")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D57" type="Path3D" parent="."]
+curve = SubResource("Curve3D_omuko")
+script = ExtResource("3_b7p6w")
+width = 0.190198
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D58" type="Path3D" parent="."]
+curve = SubResource("Curve3D_mga44")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D59" type="Path3D" parent="."]
+curve = SubResource("Curve3D_161vl")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D60" type="Path3D" parent="."]
+curve = SubResource("Curve3D_pbgah")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D61" type="Path3D" parent="."]
+curve = SubResource("Curve3D_x2ymj")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D62" type="Path3D" parent="."]
+curve = SubResource("Curve3D_otp8y")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D63" type="Path3D" parent="."]
+curve = SubResource("Curve3D_puyns")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D64" type="Path3D" parent="."]
+curve = SubResource("Curve3D_hjc4p")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D65" type="Path3D" parent="."]
+curve = SubResource("Curve3D_q5ow4")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D66" type="Path3D" parent="."]
+curve = SubResource("Curve3D_4fexv")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D67" type="Path3D" parent="."]
+curve = SubResource("Curve3D_pds6q")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D68" type="Path3D" parent="."]
+curve = SubResource("Curve3D_36f1g")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D69" type="Path3D" parent="."]
+curve = SubResource("Curve3D_4aglc")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D70" type="Path3D" parent="."]
+curve = SubResource("Curve3D_66lon")
+script = ExtResource("3_b7p6w")
+width = 0.188296
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D71" type="Path3D" parent="."]
+curve = SubResource("Curve3D_iepxe")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D72" type="Path3D" parent="."]
+curve = SubResource("Curve3D_l12u6")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D73" type="Path3D" parent="."]
+curve = SubResource("Curve3D_fbjxn")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D74" type="Path3D" parent="."]
+curve = SubResource("Curve3D_rh2ed")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D75" type="Path3D" parent="."]
+curve = SubResource("Curve3D_usbv3")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D76" type="Path3D" parent="."]
+curve = SubResource("Curve3D_mr45w")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D77" type="Path3D" parent="."]
+curve = SubResource("Curve3D_8epb7")
+script = ExtResource("3_b7p6w")
+width = 0.186413
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D78" type="Path3D" parent="."]
+curve = SubResource("Curve3D_d0txh")
+script = ExtResource("3_b7p6w")
+width = 0.184549
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D79" type="Path3D" parent="."]
+curve = SubResource("Curve3D_7ieqv")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D80" type="Path3D" parent="."]
+curve = SubResource("Curve3D_lwhgu")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D81" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ktnml")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D82" type="Path3D" parent="."]
+curve = SubResource("Curve3D_wn65t")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D83" type="Path3D" parent="."]
+curve = SubResource("Curve3D_prck2")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D84" type="Path3D" parent="."]
+curve = SubResource("Curve3D_mgtxc")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D85" type="Path3D" parent="."]
+curve = SubResource("Curve3D_55dn0")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D86" type="Path3D" parent="."]
+curve = SubResource("Curve3D_gmhfl")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D87" type="Path3D" parent="."]
+curve = SubResource("Curve3D_q1m6k")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D88" type="Path3D" parent="."]
+curve = SubResource("Curve3D_vfhrl")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D89" type="Path3D" parent="."]
+curve = SubResource("Curve3D_e237r")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D90" type="Path3D" parent="."]
+curve = SubResource("Curve3D_7l311")
+script = ExtResource("3_b7p6w")
+width = 0.182703
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D91" type="Path3D" parent="."]
+curve = SubResource("Curve3D_e6got")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D92" type="Path3D" parent="."]
+curve = SubResource("Curve3D_xsbqp")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D93" type="Path3D" parent="."]
+curve = SubResource("Curve3D_burqm")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D94" type="Path3D" parent="."]
+curve = SubResource("Curve3D_x38qt")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D95" type="Path3D" parent="."]
+curve = SubResource("Curve3D_laaa2")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D96" type="Path3D" parent="."]
+curve = SubResource("Curve3D_gmiln")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D97" type="Path3D" parent="."]
+curve = SubResource("Curve3D_rfraf")
+script = ExtResource("3_b7p6w")
+width = 0.180876
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D98" type="Path3D" parent="."]
+curve = SubResource("Curve3D_5mblc")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D99" type="Path3D" parent="."]
+curve = SubResource("Curve3D_nu2rt")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D100" type="Path3D" parent="."]
+curve = SubResource("Curve3D_tppqw")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D101" type="Path3D" parent="."]
+curve = SubResource("Curve3D_44fwf")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D102" type="Path3D" parent="."]
+curve = SubResource("Curve3D_i5emw")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D103" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ws27x")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D104" type="Path3D" parent="."]
+curve = SubResource("Curve3D_2d7dd")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D105" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ymuy6")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D106" type="Path3D" parent="."]
+curve = SubResource("Curve3D_okaoj")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D107" type="Path3D" parent="."]
+curve = SubResource("Curve3D_6n75n")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D108" type="Path3D" parent="."]
+curve = SubResource("Curve3D_adtft")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D109" type="Path3D" parent="."]
+curve = SubResource("Curve3D_lw08y")
+script = ExtResource("3_b7p6w")
+width = 0.179068
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D110" type="Path3D" parent="."]
+curve = SubResource("Curve3D_koe3s")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D111" type="Path3D" parent="."]
+curve = SubResource("Curve3D_aa301")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D112" type="Path3D" parent="."]
+curve = SubResource("Curve3D_pkwt5")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D113" type="Path3D" parent="."]
+curve = SubResource("Curve3D_prrp4")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D114" type="Path3D" parent="."]
+curve = SubResource("Curve3D_3ri8g")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D115" type="Path3D" parent="."]
+curve = SubResource("Curve3D_rx166")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D116" type="Path3D" parent="."]
+curve = SubResource("Curve3D_lxf85")
+script = ExtResource("3_b7p6w")
+width = 0.177277
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D117" type="Path3D" parent="."]
+curve = SubResource("Curve3D_q7xyh")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D118" type="Path3D" parent="."]
+curve = SubResource("Curve3D_85sfl")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D119" type="Path3D" parent="."]
+curve = SubResource("Curve3D_tncqj")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D120" type="Path3D" parent="."]
+curve = SubResource("Curve3D_y51dq")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D121" type="Path3D" parent="."]
+curve = SubResource("Curve3D_d2l8e")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D122" type="Path3D" parent="."]
+curve = SubResource("Curve3D_bsmhx")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D123" type="Path3D" parent="."]
+curve = SubResource("Curve3D_awjno")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D124" type="Path3D" parent="."]
+curve = SubResource("Curve3D_5gfy0")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D125" type="Path3D" parent="."]
+curve = SubResource("Curve3D_gvll8")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D126" type="Path3D" parent="."]
+curve = SubResource("Curve3D_t0apd")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D127" type="Path3D" parent="."]
+curve = SubResource("Curve3D_xp7ct")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D128" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ifen6")
+script = ExtResource("3_b7p6w")
+width = 0.175504
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D129" type="Path3D" parent="."]
+curve = SubResource("Curve3D_34sd3")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D130" type="Path3D" parent="."]
+curve = SubResource("Curve3D_it7qh")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D131" type="Path3D" parent="."]
+curve = SubResource("Curve3D_a0ytl")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D132" type="Path3D" parent="."]
+curve = SubResource("Curve3D_t1tpn")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D133" type="Path3D" parent="."]
+curve = SubResource("Curve3D_51ru8")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D134" type="Path3D" parent="."]
+curve = SubResource("Curve3D_fr4ab")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D135" type="Path3D" parent="."]
+curve = SubResource("Curve3D_sjrav")
+script = ExtResource("3_b7p6w")
+width = 0.173749
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D136" type="Path3D" parent="."]
+curve = SubResource("Curve3D_n1x8g")
+script = ExtResource("3_b7p6w")
+width = 0.172012
+segments = 6
+material = ExtResource("2_dkr66")
+
+[node name="Path3D137" type="Path3D" parent="."]
+curve = SubResource("Curve3D_pn2gj")
+script = ExtResource("3_b7p6w")
+width = 0.170292
+segments = 6
 material = ExtResource("2_dkr66")
