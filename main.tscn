@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlmlax26j525d"]
+
+[ext_resource type="Script" path="res://addons/plantdesigner/plant_3d.gd" id="1_0oupq"]
+[ext_resource type="Material" uid="uid://4ut6oq2l4kd2" path="res://addons/plantdesigner/materials/bark.tres" id="2_dkr66"]
+
+[node name="Plant3D" type="Node3D"]
+script = ExtResource("1_0oupq")
+output_string = "F[+F+F+F]F[-F-F-F][+F[+F+F+F]F[-F-F-F]+F[+F+F+F]F[-F-F-F]+F[+F+F+F]F[-F-F-F]]F[+F+F+F]F[-F-F-F][-F[+F+F+F]F[-F-F-F]-F[+F+F+F]F[-F-F-F]-F[+F+F+F]F[-F-F-F]]//"
+material = ExtResource("2_dkr66")
