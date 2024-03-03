@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://qi35ecbployp"]
+
+[ext_resource type="Material" uid="uid://c0403g3qh6svl" path="res://addons/bush_3d/materials/shrub/foliage.tres" id="1_0igi5"]
+[ext_resource type="Script" path="res://addons/bush_3d/bush_3d.gd" id="2_hrner"]
+
+[sub_resource type="Curve" id="Curve_qnwur"]
+_data = [Vector2(0.358093, 1), 0.0, 0.0, 0, 0]
+point_count = 1
+
+[sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_6dxko"]
+material = ExtResource("1_0igi5")
+size = 3.113
+sections = 7
+section_length = 0.5
+section_segments = 50
+curve = SubResource("Curve_qnwur")
+
+[sub_resource type="MultiMesh" id="MultiMesh_cho71"]
+transform_format = 1
+instance_count = 7
+mesh = SubResource("RibbonTrailMesh_6dxko")
+buffer = PackedFloat32Array(-0.0349929, 0.377337, 0.925415, 0, -0.00521631, 0.9259, -0.377732, 1.5565, -0.999374, -0.0180452, -0.0304317, 0, -0.0158832, -0.10047, 0.994813, 0, 0.438937, 0.893243, 0.0972199, 1.5565, -0.898377, 0.438205, 0.0299123, 0, -0.00563861, 0.339119, -0.940727, 0, -0.0768833, -0.938104, -0.337713, 1.5565, -0.997024, 0.0704219, 0.0313622, 0, 0.241038, -0.442589, 0.863722, 0, 0.476847, -0.721123, -0.502592, 1.5565, 0.845291, 0.533007, 0.0372291, 0, -0.383847, 0.905308, 0.181873, 0, -0.00868764, -0.200493, 0.979657, 1.5565, 0.923356, 0.374459, 0.0848236, 0, -0.0746679, -0.963798, -0.255965, 0, 0.918178, 0.0336994, -0.394733, 1.5565, 0.389069, -0.264495, 0.882422, 0, 0.101286, 0.645732, 0.756817, 0, 0.138806, 0.744115, -0.653472, 1.5565, -0.985126, 0.171238, -0.0142633, 0)
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D"]
+transform = Transform3D(0.815006, 0, -0.579452, 0, 1, 0, 0.579452, 0, 0.815006, 0, 0, 0)
+multimesh = SubResource("MultiMesh_cho71")
+script = ExtResource("2_hrner")
+many = 7

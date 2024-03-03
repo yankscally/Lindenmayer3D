@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://c0403g3qh6svl"]
+
+[ext_resource type="Texture2D" uid="uid://dpsl3lcvxm7mc" path="res://addons/bush_3d/materials/shrub/foliage.png" id="1_i4gf1"]
+[ext_resource type="Texture2D" uid="uid://cl3pyat6ps3t6" path="res://addons/bush_3d/materials/shrub/foliage_normal.png" id="2_eyotf"]
+
+[resource]
+transparency = 2
+alpha_scissor_threshold = 0.683
+alpha_antialiasing_mode = 0
+cull_mode = 2
+diffuse_mode = 2
+specular_mode = 1
+albedo_texture = ExtResource("1_i4gf1")
+normal_enabled = true
+normal_scale = -16.0
+normal_texture = ExtResource("2_eyotf")
+heightmap_scale = -0.015

@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://4ut6oq2l4kd2"]
+
+[ext_resource type="Texture2D" uid="uid://bd5mmaad2pjh2" path="res://addons/plantdesigner/materials/bark.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bub5ljr6lh7xy" path="res://addons/plantdesigner/materials/bark_normal.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dtgug68yj2stn" path="res://addons/plantdesigner/materials/bark_heightmap.png" id="4"]
+
+[resource]
+albedo_texture = ExtResource("1")
+normal_enabled = true
+normal_texture = ExtResource("3")
+heightmap_enabled = true
+heightmap_scale = 3.75
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("4")
+detail_albedo = ExtResource("1")
+detail_normal = ExtResource("3")
+uv1_triplanar_sharpness = 76.1092
